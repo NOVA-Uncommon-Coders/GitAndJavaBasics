@@ -9,7 +9,7 @@ public class Dogs {
     int weight;
     int age;
     boolean dryFood;
-    
+
 
 
 }
