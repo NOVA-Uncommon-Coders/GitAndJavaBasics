@@ -7,7 +7,16 @@ public class dodge {
 String type;
 String drive;
 int doors;
-String fuel;
+
+    public dodge(String type, String drive, int doors, String fuel, int passengers) {
+        this.type = type;
+        this.drive = drive;
+        this.doors = doors;
+        this.fuel = fuel;
+        this.passengers = passengers;
+    }
+
+    String fuel;
 int passengers;
 
     public String getType() {

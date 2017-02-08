@@ -10,6 +10,18 @@ public class chevy {
     String fuel;
     int passengers;
 
+    public chevy() {
+    }
+
+    public chevy(String type, String drive, int doors, String fuel, int passengers) {
+
+        this.type = type;
+        this.drive = drive;
+        this.doors = doors;
+        this.fuel = fuel;
+        this.passengers = passengers;
+    }
+
     public String getType() {
         return type;
     }
@@ -32,6 +44,8 @@ public class chevy {
 
     public void setDoors(int doors) {
         this.doors = doors;
+        if (doors == 4) switch (type = "truck") {
+        }
     }
 
     public String getFuel() {

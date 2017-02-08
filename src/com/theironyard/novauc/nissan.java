@@ -10,6 +10,14 @@ public class nissan {
     String fuel;
     int passengers;
 
+    public nissan(String type, String drive, int doors, String fuel, int passengers) {
+        this.type = type;
+        this.drive = drive;
+        this.doors = doors;
+        this.fuel = fuel;
+        this.passengers = passengers;
+    }
+
     public String getType() {
         return type;
     }
