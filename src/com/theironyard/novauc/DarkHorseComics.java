@@ -4,6 +4,8 @@ package com.theironyard.novauc;
  * Created by vtcurry on 2/7/17.
  */
 public class DarkHorseComics {
+    public DarkHorseComics() {
+    }
     String CompanyName;
     String location;
     int numberofheros;
