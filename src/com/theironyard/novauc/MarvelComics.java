@@ -23,6 +23,9 @@ public String getCompanyName() {
     }
 
     public void setLocation(String location) {
+        if (location.equalsIgnoreCase("california")) {
+            System.out.println("I bet one of them is published California!");
+        }
         this.location = location;
     }
 

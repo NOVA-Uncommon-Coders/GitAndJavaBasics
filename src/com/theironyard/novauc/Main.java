@@ -1,44 +1,50 @@
 package com.theironyard.novauc;
 
 public class Main {
-
+   // System.out.println(" . ");
     public static void main(String[] args) {
-        DCComics DCComics = new DCComics();
-        MarvelComics MarvelComics = new MarvelComics();
-        DarkHorseComics DarkHorseComics = new DarkHorseComics();
-        ImageComics ImageComics = new ImageComics();
-        IDWPublishing IDWPublishing = new IDWPublishing();
+        DCComics dccomics = new DCComics();
+        MarvelComics marvelcomics = new MarvelComics();
+        DarkHorseComics darkHorsecomics = new DarkHorseComics();
+        ImageComics imagecomics = new ImageComics();
+        IDWPublishing idwpublishing = new IDWPublishing();
 
-        DCComics.setNumberofheros(100);
-        DCComics.setNuberofvillans(50);
-        DCComics.setStillPublished(true);
-        DCComics.setLocation("New York");
-        DCComics.setCompanyName("DC");
+        dccomics.setNumberofheros(100);
+        dccomics.setNuberofvillans(50);
+        dccomics.setStillPublished(true);
+        dccomics.setLocation("New York");
+        dccomics.setCompanyName("DC");
 
-        MarvelComics.setNumberofheros(50);
-        MarvelComics.setNuberofvillans(25);
-        MarvelComics.setStillPublished(true);
-        MarvelComics.setLocation("New York");
-        MarvelComics.setCompanyName("Marvel");
+        marvelcomics.setNumberofheros(50);
+        marvelcomics.setNuberofvillans(25);
+        marvelcomics.setStillPublished(true);
+        marvelcomics.setLocation("New York");
+        marvelcomics.setCompanyName("Marvel");
 
-        DarkHorseComics.setNumberofheros(10);
-        DarkHorseComics.setNuberofvillans(5);
-        DarkHorseComics.setStillPublished(true);
-        DarkHorseComics.setLocation("Oregon");
-        DarkHorseComics.setCompanyName("Dark Horse");
+        darkHorsecomics.setNumberofheros(10);
+        darkHorsecomics.setNuberofvillans(5);
+        darkHorsecomics.setStillPublished(true);
+        darkHorsecomics.setLocation("Oregon");
+        darkHorsecomics.setCompanyName("Dark Horse");
 
-        ImageComics.setNumberofheros(50);
-        ImageComics.setNuberofvillans(50);
-        ImageComics.setStillPublished(true);
-        ImageComics.setLocation("Oregon");
-        ImageComics.setCompanyName("Image");
+        imagecomics.setNumberofheros(50);
+        imagecomics.setNuberofvillans(50);
+        imagecomics.setStillPublished(true);
+        imagecomics.setLocation("Oregon");
+        imagecomics.setCompanyName("Image");
 
-        IDWPublishing.setNumberofheros(10);
-        IDWPublishing.setNuberofvillans(10);
-        IDWPublishing.setStillPublished(true);
-        IDWPublishing.setLocation("California");
-        IDWPublishing.setCompanyName("IDWP");
-        //  {
+        idwpublishing.setNumberofheros(10);
+        idwpublishing.setNuberofvillans(10);
+        idwpublishing.setStillPublished(true);
+        idwpublishing.setLocation("California");
+        idwpublishing.setCompanyName("IDWP");
 
+
+        System.out.println("Where is this Comic Book published? " + dccomics.getLocation());
+        System.out.println("Where is this Comic Book published? " + marvelcomics.getLocation());
+        System.out.println("Where is this Comic Book published? " + darkHorsecomics.getLocation());
+        System.out.println("Where is this Comic Book published? " + imagecomics.getLocation());
+        System.out.println("Where is this Comic Book published? " + idwpublishing.getLocation());
+
+        }
     }
-}
